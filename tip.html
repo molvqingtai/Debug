@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>提示</title>
+    <style media="screen">
+        #tip{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #FFFFFF;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="" alt="">
+    <div id="tip">
+        请点击右上角在浏览器中打开
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload = () => {
+        if (navigator.userAgent.includes('MicroMessenger')) {
+            document.querySelector('#tip').style.display = 'flex'
+        }
+    }
+</script>
+
+</html>
