@@ -21,19 +21,33 @@
             display: none;
 
         }
-        img{
+        .banner{
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
             width: 90%;
             max-width: 500px;
+            text-align: center;
+        }
+        .banner img{
+            width: 100%;
+        }
+        .banner p{
+            color: #FF0000;
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <img src="octocat.png" alt="">
+    <div class="banner">
+        <a href="#">
+            <img src="banner.jpg" alt="">
+            <p>点击进入官网</p>
+        </a>
+    </div>
+
     <div id="tip">
     </div>
 </body>
