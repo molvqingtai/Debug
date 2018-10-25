@@ -38,10 +38,8 @@
     </div>
 </body>
 <script type="text/javascript">
-    window.onload = () => {
-        if (navigator.userAgent.includes('MicroMessenger')) {
-            document.querySelector('#tip').style.display = 'flex'
-        }
+    if (navigator.userAgent.includes('MicroMessenger')) {
+        document.querySelector('#tip').style.display = 'flex'
     }
 </script>
 
